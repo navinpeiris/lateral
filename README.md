@@ -1,6 +1,7 @@
 # Lateral
 
-Ruby wrapper for [lateral.io](https://lateral.io) content recommendation service.
+Ruby wrapper for [lateral.io](https://lateral.io) content recommendation service. For more information on
+methods allowed, returned codes etc, see the [api docs](https://lateral.io/docs).
 
 ## Installation
 
@@ -20,7 +21,57 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Get an API Key
+
+You can get an API key from [https://lateral.io/](https://lateral.io/).
+
+### Use the service
+
+```ruby
+text_matcher = Lateral::TextMatcher.new API_KEY
+```
+
+#### Available methods
+
+NOTE: The hash-bang methods throws an error if the request failed while the non hash-bang methods return null
+
+```ruby
+# Adding documents
+text_matcher.add  document_id: 'document-id', text: 'document text'
+text_matcher.add! document_id: 'document-id', text: 'document text'
+
+# Deleting a document
+text_matcher.delete  document_id: 'document-id'
+text_matcher.delete! document_id: 'document-id'
+
+# Delete all documents
+text_matcher.delete_all
+text_matcher.delete_all!
+
+# Fetch a document
+text_matcher.fetch  document_id: 'document-id'
+text_matcher.fetch! document_id: 'document-id'
+
+# List document ids
+text_matcher.list
+text_matcher.list!
+
+# Recommend by id
+text_matcher.recommend_by_id  document_id: 'document-id', records: 20
+text_matcher.recommend_by_id! document_id: 'document-id', records: 20
+
+# Recommend by text
+text_matcher.recommend_by_text  text: 'some text', records: 20
+text_matcher.recommend_by_text! text: 'some text', records: 20
+
+# Update meta tags
+text_matcher.update_meta  document_id: 'document-id', meta: 'meta-tags'
+text_matcher.update_meta! document_id: 'document-id', meta: 'meta-tags'
+
+# Update text
+text_matcher.update_text  document_id: 'document-id', text: 'new document text'
+text_matcher.update_text! document_id: 'document-id', text: 'new document text'
+```
 
 ## Development
 

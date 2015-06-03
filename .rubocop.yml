@@ -10,3 +10,18 @@ Metrics/LineLength:
 
 Style/Documentation:
   Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/CyclomaticComplexity:
+  Max: 7
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/ModuleLength:
+  Enabled: false
