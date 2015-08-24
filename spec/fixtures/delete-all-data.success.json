@@ -1,0 +1,9 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "/delete-all-data"
+  },
+  "response": {
+    "status": 204
+  }
+}

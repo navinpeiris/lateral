@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/documents"
+  },
+  "response": {
+    "status": 406,
+    "body": {
+      "message": "less than 4 words recognized"
+    }
+  }
+}

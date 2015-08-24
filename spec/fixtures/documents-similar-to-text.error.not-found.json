@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "POST",
+    "path": "/documents/similar-to-text"
+  },
+  "response": {
+    "status": 404,
+    "body": {
+      "message": "Couldn't find Document"
+    }
+  }
+}

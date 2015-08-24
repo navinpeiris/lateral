@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/documents/1/preferences?page=1&per_page=25"
+  },
+  "response": {
+    "status": 404,
+    "body": {
+      "message": "Couldn't find Document"
+    }
+  }
+}

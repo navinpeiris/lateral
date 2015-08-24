@@ -1,9 +1,8 @@
 RSpec.describe Lateral do
-  it 'has a version number' do
-    expect(Lateral::VERSION).not_to be nil
-  end
+  describe '::delete_all_data' do
+    before { load_mock_request 'delete-all-data.success' }
+    subject { Lateral.delete_all_data }
 
-  it 'does something useful' do
-    expect(true).to eq(true)
+    it { is_expected.to be nil }
   end
 end

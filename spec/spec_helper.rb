@@ -15,6 +15,10 @@ require 'rspec/its'
 
 Dir['./spec/support/**/*.rb'].sort.each { |f| require f }
 
+Lateral.configure do |config|
+  config.api_key = 'dummy-api-key'
+end
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

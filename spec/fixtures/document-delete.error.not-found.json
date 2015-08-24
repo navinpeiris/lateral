@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "/documents/1"
+  },
+  "response": {
+    "status": 404,
+    "body": {
+      "message": "Couldn't find document"
+    }
+  }
+}

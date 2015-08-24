@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/documents/1"
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "id": 1,
+      "text": "maximus feugiat tincidunt",
+      "meta": {
+        "title": "Excepteur sint occaecat"
+      },
+      "created_at": "2015-03-03T13:49:51.640Z",
+      "updated_at": "2015-03-03T13:49:52.640Z"
+    }
+  }
+}

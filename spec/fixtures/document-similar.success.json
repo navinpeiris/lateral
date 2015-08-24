@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/documents/1/similar"
+  },
+  "response": {
+    "status": 200,
+    "body": [
+      {
+        "id": 1,
+        "similarity": 0.9
+      },
+      {
+        "id": 2,
+        "similarity": 0.7
+      },
+      {
+        "id": 3,
+        "similarity": 0.5
+      }
+    ]
+  }
+}

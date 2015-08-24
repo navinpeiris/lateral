@@ -1,5 +1,5 @@
 module Lateral
-  class LateralError < StandardError
+  class Error < StandardError
     attr_reader :code
 
     def initialize(code, message)

@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/documents/1/preferences?page=1&per_page=25"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Per-Page": 25,
+      "Total": 100000
+    },
+    "body": [
+      {
+        "user_id": 5,
+        "document_id": 4,
+        "created_at": "2015-03-04T09:56:36.045Z",
+        "updated_at": "2015-03-04T09:56:36.045Z"
+      },
+      {
+        "user_id": 11,
+        "document_id": 4,
+        "created_at": "2015-03-04T09:56:36.045Z",
+        "updated_at": "2015-03-04T09:56:36.045Z"
+      }
+    ]
+  }
+}
