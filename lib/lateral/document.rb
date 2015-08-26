@@ -23,11 +23,11 @@ module Lateral
     end
 
     def self.create(text, meta = {})
-      api.post '/documents', text: text, meta: meta.to_json
+      api.post '/documents', data: { text: text, meta: meta.to_json }
     end
 
     def self.update(id, text, meta = {})
-      api.put "/documents/#{id}", text: text, meta: meta.to_json
+      api.put "/documents/#{id}", data: { text: text, meta: meta.to_json }
     end
 
     def self.delete(id)
@@ -44,7 +44,7 @@ module Lateral
 
     def self.similar_to_text(text, select_from: nil, number: nil)
       api.post '/documents/similar-to-text',
-               { text: text, select_from: select_from, number: number },
+               data:         { text: text, select_from: select_from, number: number },
                result_class: Similar
     end
 

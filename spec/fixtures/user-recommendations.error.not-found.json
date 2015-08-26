@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/users/1/recommendations"
+  },
+  "response": {
+    "status": 404,
+    "body": {
+      "message": "Couldn't find Document"
+    }
+  }
+}

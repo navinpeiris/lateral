@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "DELETE",
+    "path": "/users/1/preferences/2"
+  },
+  "response": {
+    "status": 404,
+    "body": {
+      "message": "Couldn't find User"
+    }
+  }
+}

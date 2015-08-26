@@ -2,6 +2,7 @@ require 'gem_config'
 
 require 'lateral/version'
 require 'lateral/document'
+require 'lateral/user'
 
 module Lateral
   include GemConfig::Base

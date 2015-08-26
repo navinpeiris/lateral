@@ -34,16 +34,16 @@ module Lateral
       convert_paginated response, path: path, page: page, per_page: per_page, result_class: result_class
     end
 
-    def post(path, data, result_class: @result_class)
+    def post(path, data: {}, result_class: @result_class)
       convert self.class.post(path, body: data.to_json), result_class: result_class
     end
 
-    def put(path, data)
+    def put(path, data: {})
       convert self.class.put(path, body: data)
     end
 
-    def delete(path)
-      convert self.class.delete(path)
+    def delete(path, result_class: @result_class)
+      convert self.class.delete(path), result_class: result_class
     end
 
     private

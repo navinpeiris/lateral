@@ -59,7 +59,7 @@ RSpec.describe Lateral::API do
   end
 
   describe '#post' do
-    subject { api.post '/documents', text: 'Fat black cat', meta: "{ \"title\": \"Lorem Ipsum\" }" }
+    subject { api.post '/documents', data: { text: 'Fat black cat', meta: "{ \"title\": \"Lorem Ipsum\" }" } }
 
     context 'when the request is successful' do
       before { load_mock_request 'document-create.success' }
