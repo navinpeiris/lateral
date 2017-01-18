@@ -10,8 +10,8 @@ module Lateral
       @id         = args.fetch :id
       @text       = args.fetch :text
       @meta       = args.fetch :meta, {}
-      @created_at = DateTime.parse(args.fetch :created_at)
-      @updated_at = DateTime.parse(args.fetch :updated_at)
+      @created_at = DateTime.parse(args.fetch(:created_at))
+      @updated_at = DateTime.parse(args.fetch(:updated_at))
     end
 
     def self.all

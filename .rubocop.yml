@@ -5,6 +5,9 @@ AllCops:
   Exclude:
    - 'bin/*'
 
+Metrics/BlockLength:
+  Enabled: false
+
 Metrics/LineLength:
   Max: 120
 

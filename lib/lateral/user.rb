@@ -8,8 +8,8 @@ module Lateral
 
     def initialize(args)
       @id         = args.fetch :id
-      @created_at = DateTime.parse(args.fetch :created_at)
-      @updated_at = DateTime.parse(args.fetch :updated_at)
+      @created_at = DateTime.parse(args.fetch(:created_at))
+      @updated_at = DateTime.parse(args.fetch(:updated_at))
     end
 
     def self.all

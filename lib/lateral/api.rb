@@ -76,7 +76,7 @@ module Lateral
     end
 
     def verify!(response)
-      fail Lateral::Error.from_response response unless response.success?
+      raise Lateral::Error.from_response response unless response.success?
     end
   end
 end
