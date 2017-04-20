@@ -4,6 +4,7 @@ AllCops:
     - '**/Rakefile'
   Exclude:
    - 'bin/*'
+   - '**/Guardfile'
 
 Metrics/BlockLength:
   Enabled: false

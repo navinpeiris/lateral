@@ -9,4 +9,4 @@ RuboCop::RakeTask.new(:rubocop) do |task|
   task.options << '--display-cop-names'
 end
 
-task default: %w(spec rubocop)
+task default: %w[spec rubocop]

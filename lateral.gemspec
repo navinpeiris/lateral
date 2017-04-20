@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'lateral/version'
@@ -9,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors = ['Navin Peiris']
   spec.email   = ['navin.peiris@gmail.com']
 
-  spec.summary     = %q{Ruby wrapper for lateral.io content recommendation API}
-  spec.description = %q{Ruby wrapper for lateral.io content recommendation API}
+  spec.summary     = 'Ruby wrapper for lateral.io content recommendation API'
+  spec.description = 'Ruby wrapper for lateral.io content recommendation API'
   spec.homepage    = 'https://github.com/navinpeiris/lateral'
   spec.license     = 'MIT'
 

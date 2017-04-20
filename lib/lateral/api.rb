@@ -11,11 +11,11 @@ module Lateral
     format :json
     # debug_output $stdout
 
-    query_string_normalizer proc { |query|
+    query_string_normalizer(proc { |query|
                               query.map do |key, value|
                                 "#{key}=#{value}" unless value.nil?
                               end.compact.join('&')
-                            }
+                            })
 
     def initialize(result_class)
       self.class.headers 'Content-Type'     => 'application/json',
