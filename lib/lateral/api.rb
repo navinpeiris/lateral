@@ -7,7 +7,7 @@ module Lateral
   class API
     include HTTParty
 
-    base_uri 'https://api.lateral.io'
+    base_uri 'https://api-v4.lateral.io'
     format :json
     # debug_output $stdout
 

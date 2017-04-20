@@ -7,7 +7,7 @@ module RequestMocks
 
     response_body = (response[:body].nil? ? nil : response[:body].to_json)
 
-    stub_request(request[:method].downcase.to_sym, "https://api.lateral.io#{request[:path]}")
+    stub_request(request[:method].downcase.to_sym, "https://api-v4.lateral.io#{request[:path]}")
       .with(headers: { 'Content-Type' => 'application/json', 'Subscription-Key' => 'dummy-api-key' })
       .to_return(status: response[:status], body: response_body, headers: response[:headers])
   end
