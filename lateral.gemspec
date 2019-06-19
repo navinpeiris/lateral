@@ -23,16 +23,13 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'httparty', '>= 0.14.0'
   spec.add_dependency 'gem_config', '~> 0.3.1'
 
-  spec.add_development_dependency 'bundler', '~> 1.9'
   spec.add_development_dependency 'rake', '~> 12.0'
   spec.add_development_dependency 'rspec', '~> 3.5'
   spec.add_development_dependency 'rspec-its', '~> 1.2'
-  spec.add_development_dependency 'rubocop', '~> 0.47'
+  spec.add_development_dependency 'rubocop', '>= 0.49'
   spec.add_development_dependency 'webmock', '~> 3.0'
   spec.add_development_dependency 'simplecov', '~> 0.12'
   spec.add_development_dependency 'guard-bundler', '~> 2.1'
   spec.add_development_dependency 'guard-rspec', '~> 4.7'
   spec.add_development_dependency 'guard-rubocop', '~> 1.2'
-  spec.add_development_dependency 'terminal-notifier-guard', '~> 1.7'
-  spec.add_development_dependency 'terminal-notifier', '~> 1.7'
 end
